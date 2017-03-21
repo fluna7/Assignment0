@@ -1,34 +1,35 @@
-import java.text.DecimalFormat;
-import java.util.Scanner;
 
 public class Circle {
-	
-	
-	public static void main(String args[]) {
-		// define variables
-		int radius = 0;
-		double area = 0;
-		double perimeter = 0;
-		int diameter = 0;
-		
-		Scanner input = new Scanner(System.in);
-		
-		DecimalFormat f = new DecimalFormat();
-		f.setMaximumFractionDigits(2);
-		
-		// ask user for radius
-		System.out.println("Enter a radius");
-		
-		radius = input.nextInt();
-		
-		area = Math.PI * Math.pow(radius,  2);
-		perimeter = 2 * Math.PI * radius;
-		diameter = 2 * radius;
-		
-		System.out.println("Diameter is :" +diameter+"\n perimeter is: "+f.format(perimeter)+"\nArea is:"+f.format(area));
-		
-		
-		
+	 private final double PI = 3.14159;
+	    private double radius;
+
+	    public void Circle() {
+	        radius = 0.0;
+	    }
+
+	    public void Circle(double r) {
+	        radius = r;
+	    }
+
+	    public void setRadius(double r) {
+	        radius = r;
+	    }
+
+	    public double getRadius() {
+	        return radius;
+	    }
+
+	    public double getArea() {
+	        return PI * radius * radius;
+	    }
+
+	    public double getDiameter() {
+	        return radius * 2;
+	    }
+
+	    public double getCircumference() {
+	        return 2 * PI * radius;
+	    }
 	}
 
-	}
+
