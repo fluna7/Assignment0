@@ -1,5 +1,4 @@
 
-
 public class distance {
 
 	    public double x;
