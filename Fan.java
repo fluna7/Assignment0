@@ -1,4 +1,3 @@
-
 public class Fan {
 	public boolean on$off;
 	public String radius;
